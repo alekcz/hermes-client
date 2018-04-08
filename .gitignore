@@ -1,0 +1,6 @@
+dist
+**/dist
+**/*.zip
+**/dist*/
+**/*.tar.*
+.DS_Store
