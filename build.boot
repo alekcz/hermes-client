@@ -17,7 +17,7 @@
           (println target)
           (shell/sh "tar" "-zcvf" target _payload)
           (client/post server
-            {:multipart [{:name "deploy-name.tar.gz" :content (clojure.java.io/file target)}]})))
+            {:multipart [{:name "payload" :content (clojure.java.io/file target)}]})))
 
       (println "Invalid parameters run: hermes deploy -h for help")))
       
